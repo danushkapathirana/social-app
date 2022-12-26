@@ -12,79 +12,81 @@ import ModeNightIcon from '@mui/icons-material/ModeNight';
 const Sidebar = () => {
     return(
         <Box flex={1} p={2} sx={{display:{xs: "none", sm: "block"}}}>
-            <List>
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#home">
-                        <ListItemIcon>
-                            <HomeIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Home"/>
-                    </ListItemButton>
-                </ListItem>
+            <Box position="fixed"> {/**to stay the sidebar fixed when feed is scrolling */}
+                <List>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#home">
+                            <ListItemIcon>
+                                <HomeIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Home"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#pages">
-                        <ListItemIcon>
-                            <ArticleIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Pages"/>
-                    </ListItemButton>
-                </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#pages">
+                            <ListItemIcon>
+                                <ArticleIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Pages"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#group">
-                        <ListItemIcon>
-                            <GroupIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Group"/>
-                    </ListItemButton>
-                </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#group">
+                            <ListItemIcon>
+                                <GroupIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Group"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#marketplace">
-                        <ListItemIcon>
-                            <StorefrontIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Marketplace"/>
-                    </ListItemButton>
-                </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#marketplace">
+                            <ListItemIcon>
+                                <StorefrontIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Marketplace"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#friends">
-                        <ListItemIcon>
-                            <PeopleIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Freinds"/>
-                    </ListItemButton>
-                </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#friends">
+                            <ListItemIcon>
+                                <PeopleIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Freinds"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#settings">
-                        <ListItemIcon>
-                            <SettingsIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Settings"/>
-                    </ListItemButton>
-                </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#settings">
+                            <ListItemIcon>
+                                <SettingsIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Settings"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#profile">
-                        <ListItemIcon>
-                            <AccountBoxIcon />
-                        </ListItemIcon>
-                        <ListItemText primary="Profile"/>
-                    </ListItemButton>
-                </ListItem>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#profile">
+                            <ListItemIcon>
+                                <AccountBoxIcon />
+                            </ListItemIcon>
+                            <ListItemText primary="Profile"/>
+                        </ListItemButton>
+                    </ListItem>
 
-                <ListItem disablePadding>
-                    <ListItemButton component="a" href="#profile">
-                        <ListItemIcon>
-                            <ModeNightIcon />
-                        </ListItemIcon>
-                        <Switch />
-                    </ListItemButton>
-                </ListItem>
-            </List>
+                    <ListItem disablePadding>
+                        <ListItemButton component="a" href="#profile">
+                            <ListItemIcon>
+                                <ModeNightIcon />
+                            </ListItemIcon>
+                            <Switch />
+                        </ListItemButton>
+                    </ListItem>
+                </List>
+            </Box>
         </Box>
     )
 }

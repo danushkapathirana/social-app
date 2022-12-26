@@ -40,7 +40,7 @@ const Navbar = () => {
     const[open, setOpen] = useState(false)
 
     return(
-        <AppBar position="static">
+        <AppBar position="sticky">
             <StyledToolbar> {/**give some default padding and margin */}
             <Typography variant="h6" sx={{display:{xs:"none", sm:"block"}}}>
                 Facebook
