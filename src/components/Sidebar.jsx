@@ -9,7 +9,7 @@ import SettingsIcon from '@mui/icons-material/Settings';
 import AccountBoxIcon from '@mui/icons-material/AccountBox';
 import ModeNightIcon from '@mui/icons-material/ModeNight';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
     return(
         <Box flex={1} p={2} sx={{display:{xs: "none", sm: "block"}}}>
             <Box position="fixed"> {/**to stay the sidebar fixed when feed is scrolling */}
@@ -82,7 +82,7 @@ const Sidebar = () => {
                             <ListItemIcon>
                                 <ModeNightIcon />
                             </ListItemIcon>
-                            <Switch />
+                            <Switch onChange={(event) => {props.setMode(props.mode === "light" ? "dark" : "light")}}/>
                         </ListItemButton>
                     </ListItem>
                 </List>

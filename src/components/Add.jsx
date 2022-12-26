@@ -34,7 +34,7 @@ const Add = () => {
             </Tooltip>
 
             <StyledModal open={open} onClose={(event) => {setOpen(false)}} aria-labelledby="modal-modal-title" aria-describedby="modal-modal-description">
-                <Box width={400} height={280} bgcolor="white" p={3} borderRadius={5}>
+                <Box width={400} height={280} bgcolor={"background.default"} color={"text.primary"} p={3} borderRadius={5}> {/**set the bgColor according to the theme */}
                     <Typography variant="h6" color="gray" sx={{textAlign: "center"}}>Create Post</Typography>
                     
                     <UserBox>
